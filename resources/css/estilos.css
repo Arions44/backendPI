@@ -1,0 +1,125 @@
+body {
+  background-color: #d4cfff;
+  margin: 0 auto;
+}
+
+.logo {
+  padding-top: 3.125rem; /* Espacio en la parte superior */
+  padding-bottom: 5rem; /* Espacio en la parte inferior */
+  display: flex;
+  display: inline-block;
+  width: 12rem;
+  height: auto;
+}
+
+.cuerpo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contenedor {
+  width: 60rem;
+  background-color: white;
+  border-radius: 2.5rem; /* Aplicamos bordes redondeados solo en la parte superior */
+  position: relative; /* Usamos posición relativa para que los elementos internos se posicionen con respecto a este contenedor */
+  box-shadow: 0.625rem 0.625rem 0.625rem #533ff4; /* Agregamos una sombra a la derecha y abajo */
+  display: flex;
+  flex-direction: column; /* Configuramos el diseño en columna */
+  align-items: center;
+}
+
+.rectangulo {
+  width: 31.25rem;
+  height: 4.375rem;
+  background-color: #533ff4;
+  border-radius: 2.5rem; /* Aplicamos bordes redondeados solo en la parte superior */
+  position: absolute; /* Usamos posición absoluta para posicionar el rectángulo en la parte superior */
+  top: -2.1875rem; /* Lo colocamos en la parte inferior del contenedor */
+  right: 2.5rem; /* Lo colocamos al principio del contenedor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-rectangulo {
+  color: white;
+  font-size: 2rem;
+}
+
+.texto-cuadrado {
+  text-align: left; /* Centrar horizontalmente */
+  margin-top: 15%;
+  margin-left: 3.125rem;
+  padding-bottom: 2.125rem;
+  color: black; /* Establecemos el color del texto a negro */
+  font-size: 1.75rem;
+}
+
+.texto-destacado {
+  font-size: 2.25rem; /* Tamaño de fuente más grande para el texto destacado */
+  color: #533ff4; /* Cambia el color del texto destacado (opcional) */
+}
+
+.columna-imagenes {
+  display: flex;
+  justify-content: space-between; /* Espacio uniforme entre las imágenes */
+}
+
+.imagen {
+  padding-top: 5%;
+  width: 10.5rem; /* Ancho del 48% para dejar espacio entre las imágenes */
+  height: 3.5rem;
+  margin: 0.3125rem;
+}
+
+.imagen-derecha {
+  max-width: 48%; /* Ancho del 48% para dejar espacio entre las imágenes */
+  height: 21.875rem;
+  margin-left: 18.75rem;
+}
+
+.footer {
+  color: #808080;
+  font-size: 1.1125rem;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 900px) {
+  .columna-imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imagen-derecha {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  .rectangulo {
+    width: 15.6rem;
+    height: 2.2rem;
+    top: -1.1875rem;
+    right: 0;
+  }
+  .texto-cuadrado {
+    font-size: 0.75rem;
+    margin: 2.5625rem;
+  }
+  .texto-destacado {
+    font-size: 1.25rem;
+  }
+  .texto-rectangulo {
+    font-size: 1rem;
+  }
+  .column-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer {
+    text-align: center;
+  }
+}
